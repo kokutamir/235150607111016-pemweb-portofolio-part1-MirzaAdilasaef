@@ -1,6 +1,6 @@
 :root{
-    --primary: #b6895b;
-    --bg: #010101;
+    --primary: #76ABAE;
+    --bg: #222831;
 
 }
 
@@ -24,14 +24,13 @@ body{
 
 }
 
-/*navbar*/
 .navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1.3rem 7%;
     background-color: rgba(1, 1, 1, 0.8);
-    border-bottom: 1px solid #513f2c;
+    border-bottom: 1px solid cyan;
     position: fixed;
     top: 0;
     left: 0;
@@ -60,7 +59,7 @@ body{
 }
 
 .navbar .navbar-nav a:hover{
-    color: #b6895b;
+    color: cyan;
 }
 
 .navbar .navbar-nav a::after{
@@ -83,7 +82,7 @@ body{
 }
 
 .navbar .navbar-extra a:hover {
-    color: #b6895b;
+    color: cyan;
 }
 
 #hamburger-menu{
@@ -91,12 +90,12 @@ body{
 
 }
 
-/*hero section*/
+
 .hero {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background-image: url('../img/header-bg.jpg');
+    background-image: url('../img/IVAN.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: relative;
@@ -119,7 +118,7 @@ body{
 
 .hero .content h1{
     font-size: 3em;
-    color: #fff;
+    color: #FFF;
     text-shadow: 1px 1px 3px rgba(1,1,3,0.5);
     line-height: 1.2;
 
@@ -148,19 +147,19 @@ body{
     box-shadow: 1px 1px 3px rgba(1,1,3,0.5);
 }
 
-/*about section */
-.about, .menu, .contact{
+
+.about, .hobi, .contact{
     padding: 8rem 7% 1rem;
 }
 
-.about h2, .menu h2, .contact h2{
+.about h2, .hobi h2, .contact h2{
     text-align: center;
     font-size: 2,6rem;
     margin-bottom: 3rem;
 
 }
 
-.about h2 span, .menu h2 span, .contact h2 span{
+.about h2 span, .hobi h2 span, .contact h2 span{
     color: var(--primary);
 }
 
@@ -191,41 +190,177 @@ body{
     line-height: 1.6;
  }
 
- /*menu */
- .menu h2, .contact h2{
-    margin-bottom: 1rem;
- }
- .menu p, .contact p {
-    text-align: center;
-    max-width: 30rem;
-    margin: auto;
-    font-weight: 100;
-    line-height: 1.6;
- }
- .menu .row{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 5rem;
-    justify-content: center;
-
- }
  
-
- .menu .row .menu-card {
+#pengalaman {
+    padding: 96px 0;
+  }
+  
+  .pengalaman-title {
+    display: inline-block;
+    font-size: 32px;
     text-align: center;
-    padding-bottom: 4rem;
-    
- }
- .menu .row .menu-card img{
-     border-radius: 50%;
-     width: 80%;
-    }
- .menu .row .menu-card .menu-card-title{
-        margin-top: 1rem auto 0.5rem;
-    
-    }
+    color: cyan;
+    border-bottom: 2px solid cyan;
+    padding-bottom: 5px;
+    margin-bottom: 40px;
+  }
 
-/*contact section*/
+  .pengalaman-bagian {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 48px;
+  }
+  
+  .pengalaman-left h3 {
+    padding-bottom: 16px;
+    color: #ffffff;
+  }
+  
+  .pengalaman-right h3 {
+    padding-bottom: 16px;
+    color: #ffffff;
+  }
+  
+  .pendidikan{
+    display: flex;
+    gap: 16px;
+  }
+  
+  .pendidikan .line {
+    padding: 0 11px;
+  }
+  
+  .pendidikan .line div {
+    width: 2px;
+    height: 100%;
+    background: cyan;
+    position: relative;
+  }
+  
+  .pendidikan-info p {
+    margin: 8px 0;
+  }
+  
+  .pendidikan-title {
+    color: cyan;
+  }
+  
+  .pendidikan-tahun {
+    margin-bottom: 40px;
+    color: cyan;
+  }
+  
+  .pendidikan .line div:before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: cyan;
+    border-radius: 50%;
+    position: absolute;
+    left: -6px;
+  }
+  
+  .organisasi {
+    display: flex;
+    gap: 16px;
+  }
+  
+  .organisasi .line {
+    padding: 0 11px;
+  }
+  
+  .organisasi .line div {
+    width: 2px;
+    height: 100%;
+    background: cyan;
+    position: relative;
+  }
+  
+  .organisasi-info p {
+    margin: 8px 0;
+  }
+  
+  .organisasi-title, .organisasi-tahun {
+    color: cyan;
+  }
+  
+  .organisasi-tahun {
+    margin-bottom: 40px;
+  }
+  
+  .organisasi .line div:before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: cyan;
+    border-radius: 50%;
+    position: absolute;
+    left: -6px;
+  }
+
+.container {
+    width: 80%;
+    background-color: #1d2a39;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.2);
+    margin: 30px auto;
+}
+
+
+.container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+    color: white;
+}
+
+
+.timeline-item {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-left: 5px solid cyan;
+    background-color: #283646;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
+}
+
+
+.timeline-year {
+    flex-basis: 20%;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #00ffff;
+}
+
+
+.timeline-content {
+    flex-basis: 80%;
+}
+
+
+.timeline-content h2 {
+    margin-bottom: 10px;
+    font-size: 1.3em;
+    color: white;
+}
+
+
+.timeline-content p {
+    font-size: 1.1em;
+    color: white;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #202f3f;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
 .contact .row {
     display: flex;
     margin-top: 2rem;
